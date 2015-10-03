@@ -8,12 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		9AB9D29E1BBFCAD200798D4B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB9D29D1BBFCAD200798D4B /* AppDelegate.swift */; };
-		9AB9D2A01BBFCAD200798D4B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB9D29F1BBFCAD200798D4B /* ViewController.swift */; };
 		9AB9D2A31BBFCAD200798D4B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9AB9D2A11BBFCAD200798D4B /* Main.storyboard */; };
 		9AB9D2A51BBFCAD200798D4B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9AB9D2A41BBFCAD200798D4B /* Assets.xcassets */; };
 		9AB9D2A81BBFCAD200798D4B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9AB9D2A61BBFCAD200798D4B /* LaunchScreen.storyboard */; };
 		9AB9D2B31BBFCAD200798D4B /* SwiftDesignPatternsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB9D2B21BBFCAD200798D4B /* SwiftDesignPatternsTests.swift */; };
 		9AB9D2BE1BBFCAD200798D4B /* SwiftDesignPatternsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB9D2BD1BBFCAD200798D4B /* SwiftDesignPatternsUITests.swift */; };
+		9AB9D2CE1BBFCBF000798D4B /* TopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB9D2CD1BBFCBF000798D4B /* TopViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		9AB9D2D01BBFCC3F00798D4B /* SingletonDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB9D2CF1BBFCC3F00798D4B /* SingletonDataManager.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +37,6 @@
 /* Begin PBXFileReference section */
 		9AB9D29A1BBFCAD200798D4B /* SwiftDesignPatterns.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftDesignPatterns.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9AB9D29D1BBFCAD200798D4B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		9AB9D29F1BBFCAD200798D4B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		9AB9D2A21BBFCAD200798D4B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9AB9D2A41BBFCAD200798D4B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9AB9D2A71BBFCAD200798D4B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +47,8 @@
 		9AB9D2B91BBFCAD200798D4B /* SwiftDesignPatternsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftDesignPatternsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9AB9D2BD1BBFCAD200798D4B /* SwiftDesignPatternsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftDesignPatternsUITests.swift; sourceTree = "<group>"; };
 		9AB9D2BF1BBFCAD200798D4B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9AB9D2CD1BBFCBF000798D4B /* TopViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopViewController.swift; sourceTree = "<group>"; };
+		9AB9D2CF1BBFCC3F00798D4B /* SingletonDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SingletonDataManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,8 +99,9 @@
 		9AB9D29C1BBFCAD200798D4B /* SwiftDesignPatterns */ = {
 			isa = PBXGroup;
 			children = (
-				9AB9D29D1BBFCAD200798D4B /* AppDelegate.swift */,
-				9AB9D29F1BBFCAD200798D4B /* ViewController.swift */,
+				9AB9D2D11BBFCD3D00798D4B /* AppDelegate */,
+				9AB9D2CB1BBFCB6400798D4B /* DesignPatterns */,
+				9AB9D2D21BBFCD5200798D4B /* Controller */,
 				9AB9D2A11BBFCAD200798D4B /* Main.storyboard */,
 				9AB9D2A41BBFCAD200798D4B /* Assets.xcassets */,
 				9AB9D2A61BBFCAD200798D4B /* LaunchScreen.storyboard */,
@@ -123,6 +126,38 @@
 				9AB9D2BF1BBFCAD200798D4B /* Info.plist */,
 			);
 			path = SwiftDesignPatternsUITests;
+			sourceTree = "<group>";
+		};
+		9AB9D2CB1BBFCB6400798D4B /* DesignPatterns */ = {
+			isa = PBXGroup;
+			children = (
+				9AB9D2CC1BBFCB8900798D4B /* Singleton */,
+			);
+			name = DesignPatterns;
+			sourceTree = "<group>";
+		};
+		9AB9D2CC1BBFCB8900798D4B /* Singleton */ = {
+			isa = PBXGroup;
+			children = (
+				9AB9D2CF1BBFCC3F00798D4B /* SingletonDataManager.swift */,
+			);
+			name = Singleton;
+			sourceTree = "<group>";
+		};
+		9AB9D2D11BBFCD3D00798D4B /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				9AB9D29D1BBFCAD200798D4B /* AppDelegate.swift */,
+			);
+			name = AppDelegate;
+			sourceTree = "<group>";
+		};
+		9AB9D2D21BBFCD5200798D4B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				9AB9D2CD1BBFCBF000798D4B /* TopViewController.swift */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -255,7 +290,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9AB9D2A01BBFCAD200798D4B /* ViewController.swift in Sources */,
+				9AB9D2CE1BBFCBF000798D4B /* TopViewController.swift in Sources */,
+				9AB9D2D01BBFCC3F00798D4B /* SingletonDataManager.swift in Sources */,
 				9AB9D29E1BBFCAD200798D4B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

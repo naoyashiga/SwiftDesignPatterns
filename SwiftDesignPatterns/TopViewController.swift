@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  TopViewController.swift
 //  SwiftDesignPatterns
 //
 //  Created by naoyashiga on 2015/10/03.
@@ -8,18 +8,20 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class TopViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+
+        singleton()
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
-
-
+    
+    func singleton() {
+        SingletonDataManager.sharedInstance.value = 1
+        print(SingletonDataManager.sharedInstance.value)
+    }
 }
-
