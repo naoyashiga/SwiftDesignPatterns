@@ -15,6 +15,7 @@ class TopViewController: UIViewController {
 
         singleton()
         decorator()
+        factoryMethod()
     }
 
     override func didReceiveMemoryWarning() {
@@ -32,5 +33,9 @@ class TopViewController: UIViewController {
         
         someCurry = ChikenCurry(decoratedCurry: someCurry)
         print("Cost:\(someCurry.getCost()) ingredients:\(someCurry.getIngredients())")
+    }
+    
+    func factoryMethod() {
+        print(CurryFactory.curryForCountry(.Thai).getIngredients())
     }
 }

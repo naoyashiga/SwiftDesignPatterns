@@ -52,3 +52,31 @@ class ChikenCurry: CurryDecorator {
         return super.getIngredients() + ":Chiken"
     }
 }
+
+class RiceCurry: CurryDecorator {
+    required init(decoratedCurry: Curry) {
+        super.init(decoratedCurry: decoratedCurry)
+    }
+    
+    override func getCost() -> Double {
+        return super.getCost() + 150
+    }
+    
+    override func getIngredients() -> String {
+        return super.getIngredients() + ":Rice"
+    }
+}
+
+class GreenCurry: CurryDecorator {
+    required init(decoratedCurry: Curry) {
+        super.init(decoratedCurry: decoratedCurry)
+    }
+    
+    override func getCost() -> Double {
+        return super.getCost() + 300
+    }
+    
+    override func getIngredients() -> String {
+        return super.getIngredients() + ":Green Chili"
+    }
+}
