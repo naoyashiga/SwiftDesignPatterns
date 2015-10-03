@@ -15,6 +15,7 @@
 		9AB9D2BE1BBFCAD200798D4B /* SwiftDesignPatternsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB9D2BD1BBFCAD200798D4B /* SwiftDesignPatternsUITests.swift */; };
 		9AB9D2CE1BBFCBF000798D4B /* TopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB9D2CD1BBFCBF000798D4B /* TopViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		9AB9D2D01BBFCC3F00798D4B /* SingletonDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB9D2CF1BBFCC3F00798D4B /* SingletonDataManager.swift */; settings = {ASSET_TAGS = (); }; };
+		9AB9D2D51BBFCDF800798D4B /* Decorator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB9D2D41BBFCDF800798D4B /* Decorator.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		9AB9D2BF1BBFCAD200798D4B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9AB9D2CD1BBFCBF000798D4B /* TopViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopViewController.swift; sourceTree = "<group>"; };
 		9AB9D2CF1BBFCC3F00798D4B /* SingletonDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SingletonDataManager.swift; sourceTree = "<group>"; };
+		9AB9D2D41BBFCDF800798D4B /* Decorator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Decorator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +133,7 @@
 		9AB9D2CB1BBFCB6400798D4B /* DesignPatterns */ = {
 			isa = PBXGroup;
 			children = (
+				9AB9D2D31BBFCDCB00798D4B /* Decorator */,
 				9AB9D2CC1BBFCB8900798D4B /* Singleton */,
 			);
 			name = DesignPatterns;
@@ -158,6 +161,14 @@
 				9AB9D2CD1BBFCBF000798D4B /* TopViewController.swift */,
 			);
 			name = Controller;
+			sourceTree = "<group>";
+		};
+		9AB9D2D31BBFCDCB00798D4B /* Decorator */ = {
+			isa = PBXGroup;
+			children = (
+				9AB9D2D41BBFCDF800798D4B /* Decorator.swift */,
+			);
+			name = Decorator;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -291,6 +302,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9AB9D2CE1BBFCBF000798D4B /* TopViewController.swift in Sources */,
+				9AB9D2D51BBFCDF800798D4B /* Decorator.swift in Sources */,
 				9AB9D2D01BBFCC3F00798D4B /* SingletonDataManager.swift in Sources */,
 				9AB9D29E1BBFCAD200798D4B /* AppDelegate.swift in Sources */,
 			);

@@ -14,6 +14,7 @@ class TopViewController: UIViewController {
         super.viewDidLoad()
 
         singleton()
+        decorator()
     }
 
     override func didReceiveMemoryWarning() {
@@ -23,5 +24,13 @@ class TopViewController: UIViewController {
     func singleton() {
         SingletonDataManager.sharedInstance.value = 1
         print(SingletonDataManager.sharedInstance.value)
+    }
+    
+    func decorator() {
+        var someCurry: Curry = SimpleCurry()
+        print("Cost:\(someCurry.getCost()) ingredients:\(someCurry.getIngredients())")
+        
+        someCurry = ChikenCurry(decoratedCurry: someCurry)
+        print("Cost:\(someCurry.getCost()) ingredients:\(someCurry.getIngredients())")
     }
 }
