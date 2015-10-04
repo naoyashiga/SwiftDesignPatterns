@@ -17,6 +17,7 @@
 		9AB9D2D01BBFCC3F00798D4B /* SingletonDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB9D2CF1BBFCC3F00798D4B /* SingletonDataManager.swift */; settings = {ASSET_TAGS = (); }; };
 		9AB9D2D51BBFCDF800798D4B /* Decorator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB9D2D41BBFCDF800798D4B /* Decorator.swift */; settings = {ASSET_TAGS = (); }; };
 		9AB9D2D81BBFD42E00798D4B /* FactoryMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB9D2D71BBFD42E00798D4B /* FactoryMethod.swift */; settings = {ASSET_TAGS = (); }; };
+		9AB9D2DE1BC0AC1600798D4B /* Builder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB9D2DD1BC0AC1600798D4B /* Builder.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		9AB9D2CF1BBFCC3F00798D4B /* SingletonDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SingletonDataManager.swift; sourceTree = "<group>"; };
 		9AB9D2D41BBFCDF800798D4B /* Decorator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Decorator.swift; sourceTree = "<group>"; };
 		9AB9D2D71BBFD42E00798D4B /* FactoryMethod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FactoryMethod.swift; sourceTree = "<group>"; };
+		9AB9D2DD1BC0AC1600798D4B /* Builder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Builder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -192,6 +194,7 @@
 		9AB9D2DA1BC0AA9800798D4B /* Creational */ = {
 			isa = PBXGroup;
 			children = (
+				9AB9D2DC1BC0ABFD00798D4B /* Builder */,
 				9AB9D2D61BBFD40100798D4B /* FactoryMethod */,
 				9AB9D2CC1BBFCB8900798D4B /* Singleton */,
 			);
@@ -204,6 +207,14 @@
 				9AB9D2D31BBFCDCB00798D4B /* Decorator */,
 			);
 			name = Structural;
+			sourceTree = "<group>";
+		};
+		9AB9D2DC1BC0ABFD00798D4B /* Builder */ = {
+			isa = PBXGroup;
+			children = (
+				9AB9D2DD1BC0AC1600798D4B /* Builder.swift */,
+			);
+			name = Builder;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -341,6 +352,7 @@
 				9AB9D2D01BBFCC3F00798D4B /* SingletonDataManager.swift in Sources */,
 				9AB9D2D81BBFD42E00798D4B /* FactoryMethod.swift in Sources */,
 				9AB9D29E1BBFCAD200798D4B /* AppDelegate.swift in Sources */,
+				9AB9D2DE1BC0AC1600798D4B /* Builder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
