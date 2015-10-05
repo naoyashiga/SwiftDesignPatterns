@@ -17,6 +17,7 @@ class TopViewController: UIViewController {
         decorator()
         factoryMethod()
         builder()
+        abstractFactory()
     }
 
     override func didReceiveMemoryWarning() {
@@ -48,5 +49,10 @@ class TopViewController: UIViewController {
         }
         
         print("rep Pepper:\(originalCurry.redPepperLevel)")
+    }
+    
+    func abstractFactory() {
+        let order = OrderMenu.chooseMenu(.A)
+        print("order price:\(order.getPrice())")
     }
 }
